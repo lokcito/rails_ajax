@@ -40,6 +40,7 @@ ActiveRecord::Schema[7.0].define(version: 0) do
     t.string "apellido_pat", limit: 30
     t.string "apellido_mat", limit: 30
     t.string "direccion", limit: 100
+    t.date "nacimiento", null: false
     t.integer "codigo_comuna"
     t.string "codigo_curso", limit: 30
     t.index ["codigo_comuna"], name: "fk_estudiante_comuna"
